@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url("/img/back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+div {
+    background-image: url("/img/back2.jpg");
+    margin-left: 25%;
+    padding-top: 5%;
+    margin-right: 35%;
+    color: white;
+
+}
