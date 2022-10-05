@@ -1,17 +1,29 @@
-* {
+body {
+    background-image: url("/Reto-JS-Validacion-de-formulario/img/back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0px;
     padding: 0px;
 }
-body {
-    background-image: url("/img/back.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-div {
-    background-image: url("/img/back2.jpg");
-    margin-left: 25%;
-    padding-top: 5%;
-    margin-right: 35%;
-    color: white;
 
+div {
+    background-color: black;
+    opacity: 50%;
+    margin-left: 25%;
+    
+    margin-right: 45%;
+    color: white;
+    
+    font-size: small;
+    margin-bottom: 80px;
+    width: ;
+    height: 150px;;
+    padding-bottom: 135px;
+    padding-top: 25px;
+}
+label{
+    margin-left: 50px;
+}
+input{
+    margin-left: 50px;
 }

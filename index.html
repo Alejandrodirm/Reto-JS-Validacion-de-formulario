@@ -6,23 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fornite</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/img/icon.jpg">
-    <link rel="stylesheet" href="/img/back.jpg">
+    <link rel="stylesheet" href="/Reto-JS-Validacion-de-formulario/css/style.css">
+    <link rel="shortcut icon" href="/Reto-JS-Validacion-de-formulario/img/icon.jpg">
+    <link rel="stylesheet" href="/Reto-JS-Validacion-de-formulario/img/back.jpg">
 </head>
 
 <body>
     <div>
         <form action="/action_page.php">
+            <h1>Formulario Fornite</h1>
             <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="name" value="nombre"><br>
+            <input type="text" id="nombre" name="name" value=""><br>
             <label for="PApellido">Primer Apellido</label><br>
-            <input type="text" id="PApellido" name="PApellido" value="Primer Apellido"><br>
+            <input type="text" id="PApellido" name="PApellido" value=""><br>
             <label for="SApellido">Segundo Apellido</label><br>
-            <input type="text" id="SApellido" name="SApellido" value="Segundo Apellido"><br>
-            <label for="correo">Correo</label><br>
-            <input type="text" id="correo" name="correo" value="Correo"><br>
-            
+            <input type="text" id="SApellido" name="SApellido" value=""><br>
+            <label for="correo">Correo Electrónico</label><br>
+            <input type="text" name="correo" value="ejemplo@gmail.com" 
+            onblur="if(this.value==''){ this.value='ejemplo@gmail.com'; this.style.color='#BBB';}"
+            onfocus="if(this.value=='ejemplo@gmail.com'){ this.value=''; this.style.color='#000';}"
+            style="color:#BBB;" />
+            <br>
+            <label for="tlf">Teléfono Fijo</label><br>
+            <input type="number" id="tlf" name="tlf" value="954" max="9"><br>
+            <label for="dni">dni</label><br>
+            <input type="text" name="DNI" value="12345678Z" 
+             onblur="if(this.value==''){ this.value='12345678Z'; this.style.color='#BBB';}"
+             onfocus="if(this.value=='12345678Z'){ this.value=''; this.style.color='#000';}"
+             style="color:#BBB;" /><br>
+            <label for="iban">iban</label><br>
+            <input type="text" id="iban" name="iban" value=""><br>
+            <label for="swift">swift</label><br>
+            <input type="text" id="swift" name="swift" value=""><br>
             <input type="submit" value="Submit">
         </form>
     </div>
