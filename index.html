@@ -16,13 +16,13 @@
         <form id="formulario">
             <h1>Formulario Fornite</h1>
             <label for="usuario">Nombre de Usuario:</label><br>
-            <input type="text" id="usuario" name="usuario" value=""required><br><br>
+            <input type="text" id="usuario" name="usuario" maxlength="14" minlength="4" value=""required><br><br>
             <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="name" value=""required><br><br>
+            <input type="text" id="nombre" name="name" maxlength="20" minlength="2" value=""required><br><br>
             <label for="pApellido">Primer Apellido</label><br>
-            <input type="text" id="pApellido" name="pApellido" value="" required><br><br>
+            <input type="text" id="pApellido" name="pApellido" value="" maxlength="24" minlength="3" required><br><br>
             <label for="sApellido">Segundo Apellido</label><br>
-            <input type="text" id="sApellido" name="sApellido" value=""required><br><br>
+            <input type="text" id="sApellido" name="sApellido" value="" maxlength="24" minlength="3"required><br><br>
             <label for="fecha">Fecha de Nacimiento</label><br>
             <input type="date" name="fecha" value=""required ><br><br>
             <label for="correo">Correo Electrónico</label><br>
@@ -34,10 +34,10 @@
             <label for="tlf">Teléfono Fijo</label><br>
             <input type="number" id="tlf" name="tlf" value="954" max="954999999"required><br><br>
             <label for="dni">dni</label><br>
-            <input type="text" name="DNI" value="12345678Z" 
+            <input type="text" name="DNI" id="dni" value="12345678Z" 
              onblur="if(this.value==''){ this.value='12345678Z'; this.style.color='#BBB';}"
              onfocus="if(this.value=='12345678Z'){ this.value=''; this.style.color='#000';}"
-             style="color:#BBB;" required/><br><br>
+             style="color:#BBB;"maxlength="9"required/><br><br>
             <label for="iban">iban</label><br>
             <input type="text" id="iban" name="iban" value=""required><br><br>
             <label for="swift">swift</label><br>
