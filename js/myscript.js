@@ -39,7 +39,7 @@ function esTlfValido(tlf){
     return tlf.match(phonePattern)
 }
 //funcion valar fecha
-function esfechaValido(fecha) { 
+function esFechaValido(fecha) { 
     let today=new Date();
     return today-14>fecha.test(fecha); 
 }
@@ -49,7 +49,7 @@ function esDniValido(dni) {
     return dni.match(DNI_REGEX); 
 }
 //funciones validar iban
-function validarIban(iban) {
+function esIbanValido(iban) {
     //Se pasa a Mayusculas
     iban = iban.toUpperCase();
     //Se quita los blancos de principio y final.
@@ -97,4 +97,14 @@ function getnumIBAN(letra) {
     ls_letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     return ls_letras.search(letra) + 10;
 }
+//validar formulario
+const btn = document.getElementById('btn');
+if( esUsuarioValido(usuario)&&esNombreValido(nombre)&&espApellidoValido(pApellido)
+&&essApellidoValido(sApellido)&&esFechaValido(fecha)&&esCorreoValido(correo)
+&&esDniValido(dni)&&esIbanValido(iban)){
+    alert("Campos Incorrectos")
+}else{
+    submitBtn.addEventListener('click', validate);
+}
+
 
