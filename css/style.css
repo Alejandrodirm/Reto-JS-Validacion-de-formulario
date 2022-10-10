@@ -1,5 +1,5 @@
 body {
-    background-image: url("/Reto-JS-Validacion-de-formulario/img/back.jpg");
+    background-image: url("/img/back.jpg");
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
@@ -8,22 +8,16 @@ body {
 
 div {
     background-color: black;
-    opacity: 50%;
+    opacity: 85%;
     margin-left: 25%;
-    
-    margin-right: 45%;
+    margin-right: 43%;
     color: white;
-    
     font-size: small;
     margin-bottom: 80px;
-    width: ;
     height: 150px;;
-    padding-bottom: 135px;
-    padding-top: 25px;
+    padding-bottom: 65%;
+    padding-top: 50px;
 }
-label{
-    margin-left: 50px;
-}
-input{
-    margin-left: 50px;
+label,input,.titulo{
+    margin-left: 20%;
 }
