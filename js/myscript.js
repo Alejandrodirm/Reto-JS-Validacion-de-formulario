@@ -102,9 +102,9 @@ const btn = document.getElementById('btn');
 if( esUsuarioValido(usuario)&&esNombreValido(nombre)&&espApellidoValido(pApellido)
 &&essApellidoValido(sApellido)&&esFechaValido(fecha)&&esCorreoValido(correo)
 &&esDniValido(dni)&&esIbanValido(iban)){
-    alert("Campos Incorrectos")
+    alert("Campos Incorrectos");
 }else{
-    submitBtn.addEventListener('click', validate);
+    btn.addEventListener('click', validate);
 }
 
 
