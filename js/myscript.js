@@ -1,23 +1,16 @@
-//variables para traer el valor de los campos del formulario
-var usuario=document.getElementById("usuario");
-var nombre=document.getElementById("nombre");
-var pApellido=document.getElementById("pApellido");
-var sApellido=document.getElementById("sApellido");
-var fecha=document.getElementById("fecha");
-var correo=document.getElementById("correo");
-var tlf=document.getElementById("tlf");
-var dni=document.getElementById("dni");
-var iban=document.getElementById("iban");
-var swift=document.getElementById("swift");
+
 //funcion validar nombre
-function esNombreValido(nombre) { 
-    var nombrePattern =/^[A-Za-z]{1}([A-Za-z]{2}|[0-9]{2}|[A-Za-z][0-9])([0-9]{4}){1}/ 
-    return nombre.match(nombrePattern) 
+function esNombreValido() { 
+    var nombrePattern =/^[A-Za-z]+[[A-zA-Z]+$/;
+    var nombre=document.getElementById("nombre").value;
+    if(!nombre.match(nombrePattern)){
+        alert("Chiqui, te has equivocado al escribir el nombre");
+    }
 }
-//funcion validar usuario
+/*//funcion validar usuario
 function esUsuarioValido(usuario) { 
     var nombrePattern =/^[A-Za-z]{1}([A-Za-z]{2}|[0-9]{2}|[A-Za-z][0-9])([0-9]{4}){1}/
-    return usuario.match(nombrePattern) 
+    return usuario.match(nombrePattern);
 }
 //funcion validar papellido
 function espApellidoValido(pApellido) { 
@@ -107,4 +100,4 @@ if( esUsuarioValido(usuario)&&esNombreValido(nombre)&&espApellidoValido(pApellid
     btn.addEventListener('click', validate);
 }
 
-
+*/
