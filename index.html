@@ -14,29 +14,29 @@
 <body>
     <div>
         <form id="formulario">
-            <h1>Formulario Fornite</h1>
+            <h1>Formulario de League of Legend</h1>
             <label for="usuario">Nombre de Usuario:</label><br>
-            <input type="text" id="usuario" name="usuario" maxlength="14" minlength="4" value="" required onblur="esNombreValido()"><br><br>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="name" maxlength="20" minlength="2" value=""required><br><br>
+            <input type="text" id="usuario" name="usuario" maxlength="14" minlength="4" value="" required><br><br>
+            <label for="nombre">Nombre:</label><br> 
+            <input type="text" id="nombre" name="name" maxlength="20" minlength="2" value="" onchange="esNombreValido()" required><br><br>
             <label for="pApellido">Primer Apellido</label><br>
-            <input type="text" id="pApellido" name="pApellido" value="" maxlength="24" minlength="3" required><br><br>
+            <input type="text" id="pApellido" name="pApellido" value="" maxlength="24" minlength="3" onchange="espApellidoValido()" required><br><br>
             <label for="sApellido">Segundo Apellido</label><br>
-            <input type="text" id="sApellido" name="sApellido" value="" maxlength="24" minlength="3"required><br><br>
+            <input type="text" id="sApellido" name="sApellido" value="" maxlength="24" minlength="3" onchange="essApellidoValido()" required><br><br>
             <label for="fecha">Fecha de Nacimiento</label><br>
-            <input type="date" name="fecha" value=""required ><br><br>
+            <input type="date" name="fecha" value="" onchange="esFechaValido()" required ><br><br>
             <label for="correo">Correo Electrónico</label><br>
-            <input type="text" name="correo" value="" placeholder="ejemplo@gmail.com" required/>
+            <input type="text" id="correo" name="correo" value="" placeholder="ejemplo@gmail.com" onchange="esCorreoValido()" required/>
             <br><br>
             <label for="tlf">Teléfono Fijo</label><br>
-            <input type="number" id="tlf" name="tlf" placeholder="954" max="954999999"required><br><br>
+            <input type="text" id="tlf" name="tlf" placeholder="" maxlength="9" onchange="esTlfValido()" required><br><br>
             <label for="dni">dni</label><br>
-            <input type="text" name="DNI" id="dni" placeholder="12345678Z"required/><br><br>
+            <input type="text" name="DNI" id="dni" placeholder="12345678Z" onchange="esDniValido()" required/><br><br>
             <label for="iban">iban</label><br>
-            <input type="text" id="iban" name="iban" value=""required><br><br>
+            <input type="text" id="iban" name="iban" value="" onchange="esIbanValido()" required><br><br>
             <label for="swift">swift</label><br>
-            <input type="text" id="swift" name="swift" value=""required><br><br>
-            <input type="submit" value="Submit" id="btn">
+            <input type="text" id="swift" name="swift" value="" required><br><br>
+            <input type="submit" value="Submit" id="btn" onclick="validarEnvio()">
         </form>
     </div>
     <script src="js/myscript.js"></script>
