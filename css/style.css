@@ -1,22 +1,29 @@
 body {
-    background-image: url("img/back.jpg");
+    background-image: url("../img/back.jpg");
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
     padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
-
-div {
+.cabeza{
+    color: yellow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -5%;
+    text-align: center;
+}
+.cuerpo {
     background-color: black;
     opacity: 85%;
-    margin-left: 25%;
+    margin-left: 36%;
     margin-right: 43%;
     color: white;
     font-size: small;
-    margin-bottom: 80px;
-    height: 150px;;
-    padding-bottom: 65%;
+    padding-bottom: 200px;
     padding-top: 50px;
+    background-position: center;
 }
 label,input,.titulo{
     margin-left: 20%;

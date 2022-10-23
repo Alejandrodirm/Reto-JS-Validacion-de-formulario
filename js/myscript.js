@@ -32,7 +32,6 @@ function esCorreoValido() {
     var correoPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
     if (!correo.match(correoPattern)) {
         alert("Te has equivocado al escribir el correo");
-        return validar = false;
     }
 }
 //validar telefono
@@ -414,15 +413,32 @@ function genera_swift(entidad) {
     swift["9000"] = "ESPBESMMXXX";
     return swift[entidad]
 }
+/*
+btnEnviar.disabled = true;
+var btnEnviar = document.getElementById("btnEnviar");
 //validar formulario
 function validarEnvio() {
-    const btn = document.getElementById('btn');
-    if (esUsuarioValido() && esNombreValido() && espApellidoValido()
-        && essApellidoValido() && esFechaValido() && esCorreoValido()
-        && esDniValido() && esIbanValido()) {
-         btn.addEventListener('click', validate);
-    } else {
-        
-        alert("Algún Campo es Incorrectos");
+    if (esNombreValido()){
+        btnEnviar.disabled=true
     }
+    if (espApellidoValido()){
+        btnEnviar.disabled=true
+    }
+    if (essApellidoValido()){
+        btnEnviar.disabled=true
+    }
+    if (esCorreoValido()){
+        btnEnviar.disabled=true
+    }
+    if (esTlfValido()){
+        btnEnviar.disabled=true
+    }
+    if (esDniValido()){
+        btnEnviar.disabled=true
+    }
+    if (esIbanValido()){
+        btnEnviar.disabled=true
+    }
+    
 }
+*/
